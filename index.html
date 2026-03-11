@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Memories ❤️</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Confetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="song" src="Aval.mp3" loop></audio>
+
+
+<!-- START PAGE -->
+<section class="start" id="startScreen">
+    <h1>Click for Surprise ❤️</h1>
+    <button onclick="startSurprise()">Start</button>
+</section>
+
+<div id="mainContent">
+
+<!-- HERO -->
+<section class="hero">
+    <h1 data-aos="fade-up">Memories 💕</h1>
+    <p data-aos="fade-up">Every moment is special ❤️</p>
+    <button onclick="fireworks()">Celebrate 🎉</button>
+</section>
+
+<!-- PHOTO SLIDER -->
+<section class="gallery">
+    <h1>Memories Gallery 📸</h1>
+
+    <div class="slider" id="slider">
+        <div class="slide-track" id="track">
+
+            <div class="slide"><img src="photos/p1.jpg"></div>
+            <div class="slide"><img src="photos/p2.jpg"></div>
+            <div class="slide"><img src="photos/p3.jpg"></div>
+            <div class="slide"><img src="photos/p4.jpg"></div>
+            <div class="slide"><img src="photos/p5.jpg"></div>
+            <div class="slide"><img src="photos/p6.jpg"></div>
+
+            <!-- duplicate for infinite loop -->
+            <div class="slide"><img src="photos/p1.jpg"></div>
+            <div class="slide"><img src="photos/p2.jpg"></div>
+            <div class="slide"><img src="photos/p3.jpg"></div>
+            <div class="slide"><img src="photos/p4.jpg"></div>
+            <div class="slide"><img src="photos/p5.jpg"></div>
+            <div class="slide"><img src="photos/p6.jpg"></div>
+
+        </div>
+    </div>
+</section>
+<div class="music-right">
+    <div class="particles"></div>
+
+    <div class="lyrics-box">
+        <h2>🎵 Our Song</h2>
+        <p>
+            Every love song makes sense</br> 
+            when I think of you 🎶🤍
+        </p>
+        <button id="musicBtn" onclick="toggleMusic()">🎵 Play Music</button>
+    </div>
+</div>
+<section class="photo-full">
+    <img src="photos/p5.jpg">
+    <h2>You are my today, my tomorrow, and my forever</h2>
+</section>
+
+<section class="photo-full">
+    <img src="photos/p6.jpg">
+    <h2>You are my peace in a noisy world
+
+    </h2>
+</section>
+
+<section class="photo-full">
+    <img src="photos/p2.jpg">
+    <h2>My heart beats softer when it’s close to yours</h2>
+</section>
+<section class="photo-full">
+    <img src="photos/p8.jpg">
+    <h2></h2>
+</section>
+
+
+
+<!-- ================= PAGE 1 ================= -->
+<section class="design-page page1">
+    <h1>Our Beautiful Journey 💕</h1>
+    <div class="collage-grid">
+        <img src="photos/p1.jpg">
+        <img src="photos/p2.jpg">
+        <img src="photos/p3.jpg">
+        <img src="photos/p4.jpg">
+    </div>
+    <p class="page-text">Every picture holds a thousand feelings ❤️</p>
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="design-page page2">
+    <div class="split-layout">
+        <div class="left">
+            <h1>Happy Moments ✨</h1>
+            <p>
+                Laughing together, dreaming together,<br>
+                building memories forever 💖
+            </p>
+        </div>
+        <div class="right">
+            <img src="photos/p5.jpg">
+        </div>
+    </div>
+</section>
+
+<!-- ================= PAGE 3 ================= -->
+<section class="design-page page3">
+    <h1 class="big-love">You & Me Forever ❤️</h1>
+    <div class="polaroid-row">
+        <div class="polaroid"><img src="photos/p11.jpg"></div>
+        <div class="polaroid"><img src="photos/p14.jpg"></div>
+        <div class="polaroid"><img src="photos/p12.jpg"></div>
+    </div>
+</section>
+
+
+<section class="canva-page beige-page">
+    <div class="container">
+
+        <div class="left-images">
+            <img src="photos/p1.jpg" class="img-large">
+            <img src="photos/p2.jpg" class="img-small">
+        </div>
+
+        <div class="right-content">
+            <h1>Happy Wedding</h1>
+            <h2>My Love ❤️</h2>
+            <p>
+                Through every smile, every tear,<br>
+                every memory we created together,<br>
+                my heart belongs to you.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="canva1">
+
+    <div class="canva1-content">
+
+        <!-- LEFT COLUMN -->
+        <div class="canva1-left">
+            <img src="photos/p16.jpg">
+            <img src="photos/p1.jpg">
+            <img src="photos/p11.jpg">
+        </div>
+
+        <!-- CENTER COLUMN -->
+        <div class="canva1-center">
+            <h1>Happy Anniversary ❤️</h1>
+            <p>
+                Every smile, every hug, every memory<br>
+                makes my world beautiful with you.
+            </p>
+
+            <div class="bottom-row">
+                <img src="photos/p7.jpg">
+                <img src="photos/p2.jpg">
+                <img src="photos/p3.jpg">
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="canva1-right">
+            <img src="photos/p4.jpg">
+            <img src="photos/p2.jpg">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- <section class="proposal">
+    <h1>Will You Be Mine Forever? ❤️</h1>
+
+    <div class="btn-box">
+        <button type="button" class="yes-btn" onclick="openHidden()">YES 💖</button>
+        <button type="button" class="no-btn" onclick="sadEffect()">NO 💔</button>
+    </div>
+</section>
+
+<!-- Sad Tom Effect -->
+<!-- <div id="sadTom" class="sad-tom">
+    <img src="https://media.tenor.com/8QfC8s7F3bQAAAAC/tom-and-jerry-sad.gif" alt="Sad Tom">
+    <p>Tom is heartbroken 💔</p>
+</div> --> -->
+
+
+</div>
+
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
